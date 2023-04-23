@@ -1,0 +1,94 @@
+body{
+  background-color: rgb(255, 255, 255);
+}
+.logocontainer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo {
+  width:300px;
+}
+.app {
+  display: grid;
+  grid-template-areas:
+    ". title ."
+    ". game controls";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+h1 {
+  text-align: center;
+  grid-area: title;
+}
+
+button {
+  padding: 4px;
+}
+
+.board {
+  border: 2px solid rgb(92, 233, 21);
+  user-select: none;
+  margin: auto;
+  grid-area: game;
+}
+
+.controls {
+  grid-area: controls;
+}
+
+.row {
+  display: flex;
+}
+
+.upcoming {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cell {
+  width: 30px;
+  aspect-ratio: 1;
+  border: 1px solid black;
+}
+
+.cell.hidden {
+  visibility: hidden;
+}
+
+.cell.Empty {
+  background-color:#ffffffe6;
+}
+
+.cell.I {
+  background-color: #33FB63;
+}
+
+.cell.J {
+  background-color:#33FB63;
+}
+
+.cell.L {
+  background-color: #33FB63;
+}
+
+.cell.O {
+  background-color: #33FB63;
+}
+
+.cell.S {
+  background-color: #33FB63;
+}
+
+.cell.T {
+  background-color: #33FB63;
+}
+
+.cell.Z {
+  background-color: #33FB63
+  ;
+}
